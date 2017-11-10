@@ -99,7 +99,7 @@ public class FillInPlaceholders extends AppCompatActivity {
                 progressBar.setProgress(progressing);
 
                 if (remainingPlaceholders == 1) {
-                    
+
                     submitButton.setText("Show story");
 
                 }
