@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundmadlibs"
+    tools:context="com.example.nathalie.nathalieborst_pset2.FillInPlaceholders">
+
+    <TextView
+        android:id="@+id/storyChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/placeholderInput"
+            android:layout_width="match_parent"
+            android:imeOptions="actionSearch"
+            android:layout_height="60dp"
+            android:text=""
+            android:hint="Fill in a word" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submitPlaceholder"
+            android:text="Submit" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>
